@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://example.com/schema"
+            targetNamespace="http://example.com/schema" elementFormDefault="qualified">
+    <xsd:element name="request" type="RequestType"/>
+    <xsd:element name="response" type="ResponseType"/>
+    <xsd:complexType name="RequestType">
+        <xsd:sequence>
+            <xsd:element name="input" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ResponseType">
+        <xsd:sequence>
+            <xsd:element name="output" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
