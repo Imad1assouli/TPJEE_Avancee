@@ -51,11 +51,8 @@ public class User {
             inbox.close(false);
             store.close();
 
-        } catch (AuthenticationFailedException e) {
-            System.err.println("Authentication failed for user " + email + ". Check the credentials or App Password.");
-            e.printStackTrace();
         } catch (MessagingException e) {
-            System.err.println("Error connecting to IMAP server: " + e.getMessage());
+            System.err.println();
             e.printStackTrace();
         }
 
